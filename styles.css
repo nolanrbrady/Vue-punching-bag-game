@@ -1,0 +1,33 @@
+#vue-app{
+  text-align: center;
+}
+.bag{
+  height: 400px;
+  width: auto;
+}
+.bag-burst{
+  height: 400px;
+  width: auto;
+}
+.health-bar{
+  width: 50%;
+  border: 2px solid black;
+  margin: 0 auto;
+  float: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.health-bar div{
+  height: 30px;
+  background: crimson;
+}
+.title{
+  color: black;
+  font-size: 65px;
+  font-family: 'bebas neue';
+}
+body{
+  background-image: url('https://i.ytimg.com/vi/jFq13o2vmSI/maxresdefault.jpg');
+  background-position: center;
+  background-size: cover;
+}

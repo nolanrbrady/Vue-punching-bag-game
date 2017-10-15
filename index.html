@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>VueJS Tutorial</title>
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://unpkg.com/vue"></script>
+  </head>
+  <body>
+
+    <div id="vue-app">
+      <h1 class="title">{{ title }}</h1>
+      <!-- Bag Image -->
+      <div class="bag-image">
+        <img v-on:click="hit" v-show="!ended" id="bag" class="bag" src="./assets/bag.png" />
+        <img v-show="ended" id="burst" class="bag-burst" src="./assets/bag-burst.png" />
+      </div>
+      <!-- Bag Health -->
+      <div id="health">
+        <div class="health-bar">
+          <div v-bind:style="{width: health + '%'}"></div>
+        </div>
+      </div>
+      <!-- Game Controls -->
+      <button v-on:click="hit" class="btn btn-default">Hit It!</button>
+      <button v-on:click="refresh" class="btn btn-default">Reset the Game</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
